@@ -1,0 +1,14 @@
+{
+  "name": "MyPocktLibrary_App",
+  "version": "1.0.0",
+  "description": "Pocket library application using vanilla javascript. It makes use of local storage",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "book_list"
+  ],
+  "author": "Sam Shanmukh",
+  "license": "MIT"
+}

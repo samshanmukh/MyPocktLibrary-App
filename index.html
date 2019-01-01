@@ -1,0 +1,44 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>MyPocktLibrary App</title>
+		<link rel="icon" type="image/ico" href="./pictures/library-book-icon.png" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="head"><i class="fas fa-book-open"></i><span>My</span>Pockt<span>Library</span></div>
+			</header>
+
+			<main class="main">
+				<form id="book-form">
+					<!-- Adding books with thier information -->
+					<label>Title</label><br><input type="text" name="title" id="title"> <br><br>
+					<label>Author</label><br><input type="text" name="author" id="author"> <br><br>
+					<label>ISBN#</label><br><input type="text" name="isbn" id="isbn"> <br><br>
+					<input type="submit" name="submit" value="Add Book">
+
+					<!-- list of books in the library -->
+					<div class="view-list">Stored Books</div>
+						<table>
+							<thead>
+								<tr>
+									<th>Title</th>
+									<th>Author</th>
+									<th>ISBN</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody id="book-list">
+
+							</tbody>
+						</table>
+				</form>
+			</main>
+		</div>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>

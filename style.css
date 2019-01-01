@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Gloria+Hallelujah|Gochi+Hand');
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+/*   background: linear-gradient(-145deg, azure, lightcyan); */
+  background: lightgreen url(./pictures/marcela-r-432403-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  /*height: 100vh;*/
+  background-color: lightslategrey;
+  opacity: 0.8;
+  position: relative;
+}
+
+.head {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 4em;
+  font-weight: bold;
+  color: lightgreen;
+  text-shadow: 2px 1px 20px lightgreen;
+  text-align: center;
+  font-style: italic;
+  transition: all 0.5s linear;
+}
+
+.head i {
+  padding: 20px
+}
+
+.head span {
+  color: #bababb;
+  text-shadow: 2px 1px 20px #bababb;
+}
+
+.main {
+  display: grid;
+  place-content: center;
+  transition: all 0.5s linear;
+}
+
+.alert {
+  font-family: 'Cinzel', serif;
+  color: azure;
+  font-size: 18px;
+  text-shadow: 2px 1px 10px azure;
+  width: 70%;
+  height: 5vh;
+  position: relative;
+  left: 15%;
+  display: grid;
+  place-content: center;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: all 0.5s linear;
+}
+
+.alert-danger {
+  background: lightcoral;
+  box-shadow: 0px 0px 10px lightcoral;
+}
+
+.alert-success {
+  background: lightgreen;
+  box-shadow: 0px 0px 10px lightgreen;
+}
+
+.alert-normal {
+  background: lightblue;
+  box-shadow: 0px 0px 10px lightblue;
+}
+
+.main label {
+  font-family: 'Cinzel', serif;
+  color: azure;
+  font-size: 18px;
+  text-shadow: 2px 1px 10px azure;
+}
+
+.main input {
+  font-family: 'Cinzel', serif;
+  color: azure;
+  border: 0px solid lightgrey;
+  border-radius: 12px;
+  text-align: center;
+}
+.main input[type = text]{
+  font-size: 18px;
+  padding: 8px 400px;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px lightgrey;
+}
+.main input[type = text]:focus{
+  box-shadow: 0px 0px 10px lightgreen;
+  border: 0px solid lightgrey;
+  color: lightgreen;
+  transition: all 0.5s linear;
+}
+
+.main input[type = submit] {
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  width: 100%;
+  height: 46px;
+  background: lightgreen;
+  text-shadow: 2px 1px 10px azure;
+  font-weight: bold;
+  transition: all 0.5s linear;
+  margin-bottom: 24px;
+  outline: none !important;
+  cursor: pointer;
+}
+.main input[type = submit]:hover {
+  box-shadow: 0px 0px 15px lightgreen;
+  transition: all 0.5s linear;
+}
+.main input[type = submit]:active {
+  background:  lightgrey;
+  color: green;
+  text-shadow: 2px 1px 10px green;
+  transition: all 0.5s linear;
+}
+::-moz-focus-inner {
+  border: none;
+}
+
+.view-list {
+  width: 100%;
+  height: 46px;
+  background-color: lightblue;
+  border-radius: 12px;
+  color: azure;
+  text-shadow: 2px 1px 10px azure;
+  display: grid;
+  place-content: center;
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+table {
+  font-family: 'Gloria Hallelujah', cursive;
+  border: 0px solid azure;
+  box-shadow: 0px 0px 20px 5px #ccc;
+  color: azure;
+  width: 100%;
+  text-align: center;
+  padding: 18px;
+  margin-bottom: 24px;
+}
+
+.main thead{
+  color: azure;
+  font-size: 18px;
+}
+.main thead tr th{
+  padding-bottom: 12px;
+  text-shadow: 2px 1px 10px azure;
+}
+
+.main tbody tr td{
+/*   box-shadow: inherit; */
+  padding: 5px;
+}
+
+.main tbody tr:nth-child(odd) {
+  background-color: lightgray;
+  color: grey;
+}
+
+.main tbody td a {
+  color: lightcoral;
+  font-size: 24px;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none !important;
+}
+
+.main tbody tr td:nth-child(4):hover {
+  cursor: pointer;
+}
